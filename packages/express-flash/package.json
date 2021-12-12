@@ -1,0 +1,31 @@
+{
+  "name": "@inertify/express-flash",
+  "version": "0.1.0",
+  "description": "Improved flash massages for Express",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && microbundle --format esm,cjs",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build",
+    "watch": "microbundle watch --format esm,cjs"
+  },
+  "keywords": [
+    "flash",
+    "inertify",
+    "node"
+  ],
+  "author": "Enkot",
+  "license": "MIT",
+  "peerDependencies": {
+    "express": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/express-session": "^1.17.4",
+    "@types/node": "^16.10.3",
+    "microbundle": "^0.14.0"
+  }
+}

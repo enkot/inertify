@@ -1,0 +1,36 @@
+{
+  "name": "@inertify/fastify",
+  "version": "0.1.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && microbundle --format esm,cjs",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build",
+    "watch": "microbundle watch --format esm,cjs"
+  },
+  "keywords": [
+    "inertia",
+    "node"
+  ],
+  "author": "Enkot",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.10.3",
+    "fastify-plugin": "^3.0.0"
+  },
+  "devDependencies": {
+    "@inertify/core": "*",
+    "fastify": "^3.0.0",
+    "microbundle": "^0.14.0",
+    "point-of-view": "^4.16.0",
+    "typescript": "^4.4.3"
+  },
+  "peerDependencies": {
+    "@inertify/core": "*",
+    "fastify": "^3.0.0"
+  }
+}
