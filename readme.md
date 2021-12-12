@@ -2,7 +2,7 @@
 
 # Inertify
 
-Inertia.js adapters for Node.js. Out of the box supports Express, Fastify and Nest, but can be easily extended to use with any other framework 😉.
+[Inertia.js](https://inertiajs.com/) adapters for Node.js. Out of the box supports Express, Fastify and Nest, but can be easily extended to use with any other framework 😉.
 
 ## Installation
 
